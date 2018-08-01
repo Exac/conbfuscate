@@ -5,7 +5,7 @@ import * as bodyParser from "body-parser"
 const app = express()
 const jsonParser = bodyParser.json();
 const urlEncodedParser = bodyParser.urlencoded({ extended: true });
-const port: number = parseInt(process.env.PORT) || 80
+const port: number = parseInt(process.env.PORT) || 5000
 // temporary
 const form = `<html><head></head><body><form method='POST' action=''><input name='email'/><textarea name='message'></textarea><input type='submit'/></form></body></html>`
 

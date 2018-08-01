@@ -26,8 +26,9 @@ app.post('/', urlEncodedParser, jsonParser, async function (req: any, res: any) 
     return res.send(req.body)
 })
 
-const server = app.listen(port, 'localhost', function () {
-    console.log(`conbfuscate @ http://0.0.0.0:80/`)
+const server = app.listen(port, function () {
+    console.log(`env: ` , process.env)
+    console.log(`conbfuscate @ http://localhost:${port}/`)
 })
 
 export default app;

@@ -26,7 +26,7 @@ app.post('/', urlEncodedParser, jsonParser, async function (req:any, res:any) {
     return res.send(req.body)
 })
 
-const server = app.listen(80, '0.0.0.0', function () {
+const server = app.listen(80, 'localhost', function () {
     console.log(`conbfuscate @ http://0.0.0.0:80/`)
 })
 

@@ -4,10 +4,10 @@
   "description": "Express server that accepts a message and sends it to an email address.",
   "main": "src/index.ts",
   "scripts": {
+    "ts-node": "ts-node",
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon",
-    "start": "ts-node src/index.ts",
-    "ts-node": "ts-node"
+    "start": "ts-node src/index.ts"
   },
   "keywords": [
     "email",
